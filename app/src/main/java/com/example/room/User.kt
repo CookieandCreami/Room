@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class User(
-    @PrimaryKey(autoGenerate = true) val uid: Int = 0, //알아서 값 정리
-    @ColumnInfo(name = "name") val userName: String?,
+    @PrimaryKey(autoGenerate = true)   val uid: Int = 0, //이 코드를 입력하면 알아서 값이 정리됨
+    @ColumnInfo(name = "name")         val userName: String?,
     @ColumnInfo(name = "phone_number") val phoneNumber: String?,
-    @ColumnInfo(name = "email") val email: String?
+    @ColumnInfo(name = "email")        val email: String?
 )
